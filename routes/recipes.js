@@ -15,10 +15,10 @@ router.get("/", (req, res, next) => {
 
 router.post("/", (req, res, next) => {
   const recipe = new Recipe({
-    name: "chapo recipe",
-    imageUrl: "",
-    ingredients: "wheat floor, hot water, salt, cooking oil, sugar",
-    description: "whatever"
+    name: req.body.name,
+    imageUrl: req.body.imageUrl,
+    ingredients: req.body.ingredients,
+    description: req.body.description
   });
 
   recipe
