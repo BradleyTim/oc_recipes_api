@@ -4,12 +4,14 @@
   "description": "a sample recipes express api",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "dev": "node server"
   },
   "author": "Bradley Tim",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
